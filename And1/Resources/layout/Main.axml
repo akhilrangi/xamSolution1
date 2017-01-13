@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <Button
-        android:id="@+id/MyButton"
-        android:layout_width="match_parent"
+        android:text="Prev"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Hello" />
-</LinearLayout>
+        android:id="@+id/buttonPrev"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonNext"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/buttonPrev"
+        android:id="@+id/textView1"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
