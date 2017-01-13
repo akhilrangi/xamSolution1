@@ -11,7 +11,9 @@ namespace And1
     [Activity(Label = "And1", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        int count = 1;
+        Button buttonPrev;
+        Button buttonNext;
+        TextView textTitle;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -20,11 +22,9 @@ namespace And1
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            buttonPrev = FindViewById<Button>(Resource.Id.buttonPrev);
+            buttonNext = FindViewById<Button>(Resource.Id.buttonNext);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
         }
     }
 }

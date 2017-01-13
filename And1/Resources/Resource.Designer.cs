@@ -67,7 +67,7 @@ namespace And1
 			public const int buttonPrev = 2131034112;
 			
 			// aapt resource value: 0x7f050002
-			public const int textView1 = 2131034114;
+			public const int textTitle = 2131034114;
 			
 			static Id()
 			{

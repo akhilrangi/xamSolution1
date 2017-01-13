@@ -22,6 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/buttonPrev"
-        android:id="@+id/textView1"
+        android:id="@+id/textTitle"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
